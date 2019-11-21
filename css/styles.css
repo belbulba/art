@@ -1,0 +1,189 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+.bgIMG1 {
+  background-image: url(../images/bgIMG2.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+.topIco1 {
+  animation: icoAnim1 0.45s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  top: -100px;
+  transform: rotate(230deg);
+}
+
+@keyframes icoAnim1 {
+  from {
+    top: -100px;
+    transform: rotate(230deg);
+  }
+
+  to {
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.topIco2 {
+  animation: icoAnim2 0.45s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s;
+  top: -100px;
+  transform: rotate(230deg);
+}
+
+@keyframes icoAnim2 {
+  from {
+    top: -100px;
+    transform: rotate(230deg);
+  }
+
+  to {
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.topIco3 {
+  animation: icoAnim3 0.45s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  top: -100px;
+  transform: rotate(230deg);
+}
+
+@keyframes icoAnim3 {
+  from {
+    top: -100px;
+    transform: rotate(230deg);
+  }
+
+  to {
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.topIco4 {
+  animation: icoAnim4 0.45s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
+  transform: rotate(230deg);
+  top: -100px;
+}
+
+@keyframes icoAnim4 {
+  from {
+    top: -100px;
+    transform: rotate(230deg);
+  }
+
+  to {
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.iconsIMG {
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+
+.iconsIMG:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.test {
+  border: pink 2px solid;
+}
+
+.logo {
+  animation: logoAnim 1s ease-out;
+  animation-fill-mode: forwards;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.contLogo {
+  transform: translateY(-35px);
+}
+
+@keyframes logoAnim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  animation: titleAnim 1.3s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  bottom: -200px;
+  transform:scale(0.8);
+}
+
+.contTitle {
+  transform: translateY(-85px);
+}
+
+@keyframes titleAnim {
+  from {
+    opacity: 0;
+    bottom: -200px;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+.mousedown {
+  animation: anim 3s ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  transform: scale(0.35);
+}
+
+.contMDown {
+  transform:translateY(-310px);
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
