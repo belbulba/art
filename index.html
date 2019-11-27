@@ -11,60 +11,49 @@
   <meta charset="utf-8">
   <title>Art-Gallery</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script type="text/javascript">
-  $('.flowing-scroll').on( 'click', function(){
-  var el = $(this);
-  var dest = el.attr('href'); // получаем направление
-  if(dest !== undefined && dest !== '') { // проверяем существование
-      $('html').animate({
-          scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
-      }, 500 // скорость прокрутки
-      );
-  }
-  return false;
-});
-  </script>
 </head>
 
 <body>
 
-  <div class="container-fluid bgIMG1">
-    <div class="row d-flex justify-content-center">
-      <a href="https://vk.com/belbuiba">
-        <div class="col-auto p-0 topIco1 test2">
+  <script type="text/javascript">
+    document.write("<div class='container-fluid bgIMG1' style='height:" + $(window).height() + "px;'>");
+  </script>
+    <div class="row no-gutters align-items-center">
+
+        <div class="test col-3 p-0 topIco1 test2 d-flex justify-content-center">
           <img class="test2 iconsIMG" src="images/Vk_33.png" alt="">
         </div>
-      </a>
-      <a href="https://facebook.com">
-        <div class="col-auto p-0 topIco2">
+
+
+        <div class="test col-3 p-0 topIco2">
           <img class="iconsIMG" src="images/Fb_33.png" alt="">
         </div>
-      </a>
-      <a href="https://twitter.com">
-        <div class="col-auto p-0 topIco3">
+
+
+        <div class="test col-3 p-0 topIco3">
           <img class=" iconsIMG" src="images/Twitter_33.png" alt="">
         </div>
-      </a>
-      <a href="https://www.instagram.com/belbulba/">
-        <div class="col-auto p-0 topIco4">
+
+
+        <div class="test col-3 p-0 topIco4">
           <img class=" iconsIMG" src="images/Inst_33.png" alt="">
         </div>
-      </a>
+
     </div>
-    <div class="test2 row  d-flex justify-content-center contLogo">
+    <div class=" row  d-flex justify-content-center contLogo">
       <div class="test2 col-auto logo">
         <img src="images/logo.png" alt="">
       </div>
     </div>
-    <div class="test2 row  d-flex justify-content-center contTitle">
+    <div class=" row  d-flex justify-content-center contTitle">
       <div class="test2 col-auto col-xs-2 title">
         <img src="images/mainTitle.png" alt="">
       </div>
     </div>
-    <div class="test2 row  d-flex justify-content-center contMDown">
-      <div class="test2 col-auto col-xs-2 mousedown">
-        <img src="images/mouse.gif" alt="">
-      </div>
+    <div class=" row mousedown">
+<div class=" col d-flex contMDown justify-content-center">
+<img class=" mouseImage" src="images/mouse.gif" alt="">
+</div>
     </div>
   </div>
 
