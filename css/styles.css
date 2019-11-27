@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Mario';
+  src: url('../fonts/MarioBrosDScopy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   width: 100%;
   max-width: 100%;
@@ -14,11 +21,31 @@ body {
 
 .bgIMG1 {
   background-image: url(../images/bgIMG2.png);
-  background-repeat: no-repeat;
-  -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+  background-repeat: repeat-y;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.bgIMG2 {
+  background-image: url(../images/bgIMG3.png);
+  background-repeat: repeat-y;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+  transform: translateY(-470px);
+  opacity: 1;
+  z-index: 1;
 }
 
 .topIco1 {
@@ -146,7 +173,7 @@ body {
   animation-fill-mode: forwards;
   opacity: 0;
   bottom: -200px;
-  transform:scale(0.8);
+  transform: scale(0.8);
 }
 
 .contTitle {
@@ -171,11 +198,13 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 1s;
   opacity: 0;
-  transform: scale(0.35);
+  transform: scale(0.32);
+  z-index: 2;
 }
 
 .contMDown {
-  transform:translateY(-310px);
+  transform: translateY(-310px);
+  z-index: 2;
 }
 
 @keyframes anim {
@@ -186,4 +215,27 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainFont {
+  font-family: Mario;
+  font-size: 30px;
+}
+
+.downarrow {
+  padding-left:200px;
+}
+
+.upperarrow {
+ margin-right:110px;
 }

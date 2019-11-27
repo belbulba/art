@@ -10,11 +10,25 @@
   <link href="css/styles.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>Art-Gallery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  $('.flowing-scroll').on( 'click', function(){
+  var el = $(this);
+  var dest = el.attr('href'); // получаем направление
+  if(dest !== undefined && dest !== '') { // проверяем существование
+      $('html').animate({
+          scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+      }, 500 // скорость прокрутки
+      );
+  }
+  return false;
+});
+  </script>
 </head>
 
 <body>
 
-  <div class="container-fluid test2 bgIMG1">
+  <div class="container-fluid bgIMG1">
     <div class="row d-flex justify-content-center">
       <a href="https://vk.com/belbuiba">
         <div class="col-auto p-0 topIco1 test2">
@@ -53,6 +67,47 @@
       </div>
     </div>
   </div>
+
+
+  <script type="text/javascript">
+    document.write("<div class=' container-fluid bgIMG2' style='height:" + $(window).height() + "px;'>");
+  </script>
+  <div class=" container d-flex h-100 align-items-center justify-content-center">
+    <div class="row">
+      <div class="row w-100 d-flex align-items-center justify-content-center">
+        <div class="upperarrow col-4 ">
+          <img src="images/upperarrow.png" alt="">
+        </div>
+      </div>
+      <div class="row w-100">
+        <div class="col-4 d-flex justify-content-center">
+          <a href="#goToMe" class="flowing-scroll"> <img class="iconsIMG" src="images/gallery.png" alt=""> </a>
+        </div>
+        <div class="mainFont col-4">
+          <div class="w-100 row d-flex justify-content-center align-items-center">
+        <div class="col align-text-center">
+          text text text text text text etx
+        </div>
+          </div>
+          <div class="w-100 row d-flex justify-content-center align-items-center">
+            <div class="col">
+text text text text text text etx text text text text text text etx
+            </div>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <a href="#"> <img class="iconsIMG" src="images/gallery.png" alt=""> </a>
+        </div>
+      </div>
+      <div class="row w-100 d-flex align-items-center justify-content-center">
+        <div class="col-4 ">
+          <img class="downarrow" src="images/downarrow.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
