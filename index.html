@@ -8,9 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link href="css/styles.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>Art-Gallery</title>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
@@ -51,17 +56,17 @@
     <div class="row d-flex justify-content-center align-self-center">
       <div class="galleryContainer mainFont  col-sm-11 col-md-3 d-flex justify-content-center align-items-center">
         <a href="gallery.html">
-          <img class="displayNone galleryImage" src="images/gallery.png" alt="">
-          <img class="dontDisplay galleryImageXS" src="images/gallery.png" alt=""></a>
+          <img class="displayNone wow bounceIn galleryImage" src="images/gallery.png" alt="" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-duration="1s">
+          <img class="dontDisplay wow bounceIn galleryImageXS" src="images/gallery.png" alt="" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-duration="1s"></a>
       </div>
-      <div class="mainFont  col-sm-11 col-md-5 d-flex justify-content-center align-items-center">
+      <div class="mainFont wow flash col-sm-11 col-md-5 d-flex justify-content-center align-items-center" data-wow-duration="1s" data-wow-delay="0.3s">
         <img class="displayNone secondTextImage" src="images/secondText.png" alt="">
         <img class="dontDisplay secondTextImageXS" src="images/secondText.png" alt="">
       </div>
       <div class="galleryContainer mainFont  col-sm-11 col-md-3 d-flex justify-content-center align-items-center">
         <a href="info.html">
-          <img class="displayNone galleryImage" src="images/smth.png" alt="">
-          <img class="dontDisplay galleryImageXS" src="images/smth.png" alt=""></a>
+          <img class="displayNone wow bounceIn galleryImage" src="images/smth.png" alt="" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-duration="1s">
+          <img class="dontDisplay wow bounceIn galleryImageXS" src="images/smth.png" alt="" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-durationbounceIn></a>
       </div>
     </div>
   </div>

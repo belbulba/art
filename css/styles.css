@@ -266,6 +266,7 @@ body {
 
 .galleryImage {
   width: 25vw;
+  opacity:0;
 }
 
 .galleryImageXS {
