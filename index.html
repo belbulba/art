@@ -2,25 +2,28 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <title>Art-Gallery</title>
   <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/styles.css" rel="stylesheet">
-  <meta charset="utf-8">
-  <title>Art-Gallery</title>
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
 <body>
-  <div class="container-fluid bgIMG1">
+  <div id="fullpage">
+    <div class="section" id="section0">
+  <div class="active container-fluid bgIMG1">
     <div class=" row d-flex justify-content-center">
       <div class="col-1 topIco1 d-flex justify-content-center">
         <a href="https://vk.com/belbuiba"> <img class="iconsIMG" src="images/Vk_33.png" alt=""></a>
@@ -51,26 +54,30 @@
       </div>
     </div>
   </div>
+  </div>
 
+  <div class="section" id="section1">
   <div class="container-fluid bgIMG2 d-flex align-items-center justify-content-center">
     <div class="row d-flex justify-content-center align-self-center">
-      <div class="galleryContainer mainFont  col-sm-11 col-md-3 d-flex justify-content-center align-items-center">
+      <div class=" mainFont  col-sm-11 col-xl-3 d-flex justify-content-center align-items-center">
         <a href="gallery.html">
           <img class="displayNone wow bounceIn galleryImage" src="images/gallery.png" alt="" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-duration="1s">
           <img class="dontDisplay wow bounceIn galleryImageXS" src="images/gallery.png" alt="" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-duration="1s"></a>
       </div>
-      <div class="mainFont wow flash col-sm-11 col-md-5 d-flex justify-content-center align-items-center" data-wow-duration="1s" data-wow-delay="0.6s">
+      <div class="mainFont wow flash col-sm-11 col-xl-5 d-flex justify-content-center align-items-center" data-wow-duration="1s" data-wow-delay="0.6s">
         <img class="displayNone secondTextImage" src="images/secondText.png" alt="">
         <img class="dontDisplay secondTextImageXS" src="images/secondText.png" alt="">
       </div>
-      <div class="galleryContainer mainFont  col-sm-11 col-md-3 d-flex justify-content-center align-items-center">
+      <div class=" mainFont  col-sm-11 col-xl-3 d-flex justify-content-center align-items-center">
         <a href="info.html">
           <img class="displayNone wow bounceIn galleryImage" src="images/smth.png" alt="" data-wow-delay="0.9s" data-wow-iteration="1" data-wow-duration="1s">
           <img class="dontDisplay wow bounceIn galleryImageXS" src="images/smth.png" alt="" data-wow-delay="0.9s" data-wow-iteration="1" data-wow-duration="1s"></a>
       </div>
     </div>
   </div>
+</div>
 
+  <div class="section" id="section2">
   <div class="container-fluid bgIMG3 d-flex align-items-center justify-content-center">
     <div class="row d-flex justify-content-center">
       <div class="col-sm-10 col-md-5 bulbaContainer d-flex justify-content-center align-items-center">
@@ -82,10 +89,16 @@
     </div>
 
   </div>
+</div>
+</div>
 
 
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
 
-
+	});
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

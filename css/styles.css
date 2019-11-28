@@ -40,7 +40,7 @@ body {
   right: 0;
   top: 100vh;
   background-image: url(../images/bgIMG2.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   height: 100vh;
 }
@@ -265,7 +265,7 @@ body {
 }
 
 .galleryImage {
-  width: 25vw;
+  width: 15vw;
   opacity:0;
 }
 
@@ -273,27 +273,22 @@ body {
   height: 33vh;
 }
 
-.galleryContainer {}
-
-.imageSecondText {
-  width: 30vw;
-}
 
 .secondTextImage {
-  width: 23vw;
+width: 15vw;
 }
 
 .secondTextImageXS {
-  height: 33vh;
+  height:33vh;
 }
 
-@media (max-width:767px) {
+@media (max-width:1200px) {
   .displayNone {
     display: none;
   }
 }
 
-@media (min-width:767px) {
+@media (min-width:1200px) {
   .dontDisplay {
     display: none;
   }
