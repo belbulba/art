@@ -19,41 +19,42 @@ body {
   color: white;
 }
 
-.bgIMG1 {}
-
-.bgIMG1::before {
-  content: '';
+.bgIMG1 {
   display: block;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: -1;
   transform-origin: center;
   background-image: url(../images/bgIMG1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  transform: translateZ(-1px);
 }
 
-.bgIMG2 {}
-
-.bgIMG2::before {
-  content: '';
+.bgIMG2 {
   display: block;
   position: absolute;
   left: 0;
   right: 0;
   top: 100vh;
-  z-index: -1;
-  transform-origin: center;
   background-image: url(../images/bgIMG2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  transform: translateZ(-1px);
+}
+
+.bgIMG3 {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200vh;
+  background-image: url(../images/bgIMG3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .topIco1 {
@@ -162,15 +163,35 @@ body {
 }
 
 .logo {
-  animation: logoAnim 1s ease-out;
+  animation: logoAnimShadow 3s ease-in;
   animation-fill-mode: forwards;
-  transition: 0.5s;
-  opacity: 0;
+  animation-iteration-count: infinite;
   height: 44vh;
 }
 
 .contLogo {
   height: 45vh;
+  animation: logoAnim 1s ease-out;
+  animation-fill-mode: forwards;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+@keyframes logoAnimShadow {
+  0% {
+    -webkit-filter: drop-shadow(0 0 15px #A252C3);
+    filter: drop-shadow(0 0 15px #A252C3);
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0 0 35px #A252C3);
+    filter: drop-shadow(0 0 35px #A252C3);
+  }
+
+  100% {
+    -webkit-filter: drop-shadow(0 0 15px #A252C3);
+    filter: drop-shadow(0 0 15px #A252C3);
+  }
 }
 
 @keyframes logoAnim {
@@ -275,4 +296,44 @@ body {
   .dontDisplay {
     display: none;
   }
+}
+
+.bulbaImage {
+  animation: bulbaAnim 4s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  height: 54vh;
+  -webkit-filter: drop-shadow(0 0 0 white);
+  filter: drop-shadow(0 0 0 white);
+}
+
+@keyframes bulbaAnim {
+  0% {
+    -webkit-filter: drop-shadow(0 0 0 white);
+    filter: drop-shadow(0 0 0 white);
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0 0 25px #8F17A5);
+    filter: drop-shadow(0 0 25px #8F17A5);
+  }
+
+  100% {
+    -webkit-filter: drop-shadow(0 0 0 white);
+    filter: drop-shadow(0 0 0 white);
+  }
+}
+
+.bulbaContainer {
+  height: 55vh;
+}
+
+.bulbaTextContainer {
+  text-shadow: 4px 4px 0 #8F17A5;
+}
+
+.mainFontBulba {
+  font-family: Mario;
+  font-size: 35px;
 }
