@@ -38,7 +38,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 100vh;
+  top: 0vh;
   background-image: url(../images/bgIMG2.png);
   background-repeat: repeat-y;
   background-size: cover;
@@ -50,7 +50,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 200vh;
+  top: 0vh;
   background-image: url(../images/bgIMG3.png);
   background-repeat: no-repeat;
   background-size: cover;
