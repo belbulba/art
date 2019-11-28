@@ -19,32 +19,41 @@ body {
   color: white;
 }
 
-.bgIMG1 {
+.bgIMG1 {}
+
+.bgIMG1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  transform-origin: center;
   background-image: url(../images/bgIMG1.png);
-  background-repeat: repeat-y;
-  -moz-background-size: 100%;
-  /* Firefox 3.6+ */
-  -webkit-background-size: 100%;
-  /* Safari 3.1+ и Chrome 4.0+ */
-  -o-background-size: 100%;
-  /* Opera 9.6+ */
-  background-size: 100%;
-  /* Современные браузеры */
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  transform: translateZ(-1px);
 }
 
-.bgIMG2 {
+.bgIMG2 {}
+
+.bgIMG2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100vh;
+  z-index: -1;
+  transform-origin: center;
   background-image: url(../images/bgIMG2.png);
-  background-repeat: repeat-y;
-  -moz-background-size: 100%;
-  /* Firefox 3.6+ */
-  -webkit-background-size: 100%;
-  /* Safari 3.1+ и Chrome 4.0+ */
-  -o-background-size: 100%;
-  /* Opera 9.6+ */
-  background-size: 100%;
-  /* Современные браузеры */
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  transform: translateZ(-1px);
 }
 
 .topIco1 {
@@ -138,11 +147,13 @@ body {
 
 .iconsIMG {
   height: 10vh;
+  transform: scale(1);
   transition: 0.5s;
 }
 
 .iconsIMG:hover {
-  height: 11vh;
+  transform: scale(1.1);
+  transform-origin: center;
   transition: 0.5s;
 }
 
@@ -233,18 +244,35 @@ body {
 }
 
 .galleryImage {
-width: 30vw;
+  width: 25vw;
 }
 
-.galleryContainer {
-
-
+.galleryImageXS {
+  height: 33vh;
 }
+
+.galleryContainer {}
 
 .imageSecondText {
-
+  width: 30vw;
 }
 
 .secondTextImage {
-  height: 50vh;
+  width: 23vw;
+}
+
+.secondTextImageXS {
+  height: 33vh;
+}
+
+@media (max-width:767px) {
+  .displayNone {
+    display: none;
+  }
+}
+
+@media (min-width:767px) {
+  .dontDisplay {
+    display: none;
+  }
 }
