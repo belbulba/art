@@ -65,7 +65,6 @@ body {
   animation-delay: 0s;
   top: -100px;
   transform: rotate(230deg);
-  width:
 }
 
 @keyframes icoAnim1 {
@@ -264,22 +263,54 @@ body {
   height: 18vh;
 }
 
+.arrowsContainer {
+  height: 23vh;;
+}
+
+.arrowImageUp {
+  width: 10vw;
+  transform:rotate(-15deg);
+}
+
+.arrowImageDown {
+  width: 10vw;
+  transform:rotate(-15deg);
+}
+
+.galleryContainer {
+height: 50vh;
+}
+
 .galleryImage {
-  width: 15vw;
-  opacity:0;
+  width: 20vw;
+  transition: 0.5s;
+  transform: rotate(0deg);
+}
+
+.galleryImage:hover {
+  width: 20.5vw;
+  transition: 0.5s;
+  transform: rotate(-5deg);
 }
 
 .galleryImageXS {
   height: 33vh;
+  transform: rotate(0deg);
+  transition: 0.5s;
 }
 
+.galleryImageXS:hover {
+  height: 33.5vh;
+  transform: rotate(-5deg);
+  transition: 0.5s;
+}
 
 .secondTextImage {
-width: 15vw;
+  width: 24vw;
 }
 
 .secondTextImageXS {
-  height:33vh;
+  height: 33vh;
 }
 
 @media (max-width:1200px) {
@@ -299,7 +330,18 @@ width: 15vw;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   transition: 0.5s;
-  height: 54vh;
+  height: 60vh;
+  -webkit-filter: drop-shadow(0 0 0 white);
+  filter: drop-shadow(0 0 0 white);
+}
+
+
+.bulbaImageXS {
+  animation: bulbaAnim 4s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  height: 40vh;
   -webkit-filter: drop-shadow(0 0 0 white);
   filter: drop-shadow(0 0 0 white);
 }
@@ -331,5 +373,12 @@ width: 15vw;
 
 .mainFontBulba {
   font-family: Mario;
-  font-size: 35px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.mainFontBulbaXS {
+  font-family: Mario;
+  font-size: 23px;
+  text-align: center;
 }
