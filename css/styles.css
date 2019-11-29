@@ -57,6 +57,16 @@ body {
   height: 100vh;
 }
 
+.bgIMG4 {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0vh;
+  background-image: url(../images/bgIMG4.png);
+  background-repeat: repeat-y;
+}
+
 .topIco1 {
   height: 11vh;
   animation: icoAnim1 0.45s ease-out;
@@ -381,4 +391,23 @@ height: 50vh;
   font-family: Mario;
   font-size: 23px;
   text-align: center;
+}
+
+.backImage {
+  width: 15vw;
+  padding:3vh 0 3vh 0;
+}
+
+.backImageXS {
+  height: 18vh;
+  padding:3vh 0 3vh 0;
+}
+
+
+.frameImage {
+  width: 23vw;
+}
+
+.frameImageXS {
+  height:70vh;
 }
