@@ -28,7 +28,7 @@ body {
   right: 0;
   bottom: 0;
   /* фоновый цвет элемента */
-  background: #e0e0e0;
+  background: #18061F;
   /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
   z-index: 1001;
 }
@@ -49,7 +49,7 @@ body {
   position: absolute;
   display: inline-block;
   top: 0;
-  background-color: #337ab7;
+  background-color: white;
   border-radius: 100%;
   width: 35px;
   height: 35px;
@@ -507,4 +507,58 @@ width: 70vw;
     z-index: -1;
     width: 50vw;
 
+}
+
+.backArrowContainer {
+  height:15vh;
+}
+
+.backArrow {
+  height: 10vh;
+}
+
+.artworksFull {
+  animation: bulbaAnim 4s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  height: 60vh;
+}
+
+.mainFontArtworks {
+  font-family: Mario;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 4px 4px 0 #8F17A5;
+}
+
+.artworkNameContainer {
+  height:20vh;
+}
+
+.textInfoPadding {
+  padding-top: 5vh;
+  font-family: Mario;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 4px 0 #8F17A5;
+}
+
+.textInfoPaddingBlack {
+  padding-top: 5vh;
+  font-family: Mario;
+  font-size: 25px;
+  text-shadow: 4px 4px 0 black;
+  text-align: center;
+}
+
+.textInfo {
+  font-family: Mario;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 4px 0 #8F17A5;
+}
+
+.InfoTextContainer {
+  width: 60vw;
 }
