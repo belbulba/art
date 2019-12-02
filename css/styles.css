@@ -515,6 +515,12 @@ width: 70vw;
 
 .backArrow {
   height: 10vh;
+  transition: 0.5s;
+}
+
+.backArrow:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .artworksFull {
@@ -522,18 +528,15 @@ width: 70vw;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   transition: 0.5s;
-  height: 60vh;
+  height: 80vh;
 }
 
 .mainFontArtworks {
+  padding-top: 5vh;
   font-family: Mario;
   font-size: 60px;
-  text-align: center;
   text-shadow: 4px 4px 0 #8F17A5;
-}
-
-.artworkNameContainer {
-  height:20vh;
+  text-align: center;
 }
 
 .textInfoPadding {
@@ -547,8 +550,8 @@ width: 70vw;
 .textInfoPaddingBlack {
   padding-top: 5vh;
   font-family: Mario;
-  font-size: 25px;
-  text-shadow: 4px 4px 0 black;
+  font-size: 45px;
+  text-shadow: 6px 6px 0px black;
   text-align: center;
 }
 
@@ -559,6 +562,15 @@ width: 70vw;
   text-shadow: 4px 4px 0 #8F17A5;
 }
 
-.InfoTextContainer {
-  width: 60vw;
+.endIcons {
+  transition: 0.5s;
+  -webkit-filter: drop-shadow(2px 2px 0 MediumOrchid);
+  filter: drop-shadow(2px 2px 0 MediumOrchid);
+}
+
+.endIcons:hover {
+  transform: scale(1.1);
+  transition:0.5s;
+  -webkit-filter: drop-shadow(2px 2px 15px MediumOrchid);
+  filter: drop-shadow(2px 2px 15px MediumOrchid);
 }
