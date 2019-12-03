@@ -135,7 +135,7 @@ body {
   right: 0;
   top: 0vh;
   background-image: url(../images/bgIMG4.png);
-  background-repeat: repeat-y;
+  width: 100vw;
 }
 
 .topIco1 {
@@ -147,6 +147,7 @@ body {
   top: -100px;
   transform: rotate(230deg);
 }
+
 
 @keyframes icoAnim1 {
   from {
@@ -236,6 +237,8 @@ body {
   transform: scale(1.1);
   transform-origin: center;
   transition: 0.5s;
+  -webkit-filter: drop-shadow(0 0 20px MediumOrchid);
+  filter: drop-shadow(0 0 20px MediumOrchid);
 }
 
 .test {
@@ -469,24 +472,31 @@ width: 70vw;
 }
 
 .backImage {
-  width: 15vw;
+  width: 20vh;
   padding:3vh 0 3vh 0;
   transition: 0.5s;
 }
 
 .backImage:hover {
-  width: 15.5vw;
+  transform: scale(1.1);
   transition: 0.5s;
 }
 
 .backImageXS {
   height: 18vh;
   padding:3vh 0 3vh 0;
+    transition: 0.5s;
+}
+
+.backImageXS:hover {
+  transform: scale(1.1);
+  padding:3vh 0 3vh 0;
+    transition: 0.5s;
 }
 
 
 .frameImage {
-  width: 23vw;
+  height: 60vh;
   transition: 0.5s;
 }
 
@@ -495,6 +505,12 @@ width: 70vw;
 }
 
 .frameImage:hover {
+  -webkit-filter: drop-shadow(0 0 10px MediumOrchid);
+  filter: drop-shadow(0 0 10px MediumOrchid);
+  transition: 0.5s;
+}
+
+.frameImageXS:hover {
   -webkit-filter: drop-shadow(0 0 10px MediumOrchid);
   filter: drop-shadow(0 0 10px MediumOrchid);
   transition: 0.5s;
