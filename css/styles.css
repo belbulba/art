@@ -598,3 +598,22 @@ width: 70vw;
   -webkit-filter: drop-shadow(2px 2px 15px MediumOrchid);
   filter: drop-shadow(2px 2px 15px MediumOrchid);
 }
+
+.videoGalleryImage {
+  height: 60vh;
+  margin-top: 11vh;
+    transition:0.5s;
+}
+
+.videoGalleryImage:hover {
+  transition:0.5s;
+  -webkit-filter: drop-shadow(2px 2px 15px MediumOrchid);
+  filter: drop-shadow(2px 2px 15px MediumOrchid);
+}
+
+.mainFontVideo {
+  font-family: Mario;
+  font-size: 60px;
+  text-shadow: 4px 4px 0 #8F17A5;
+  text-align: center;
+}
