@@ -531,6 +531,14 @@ width: 70vw;
   height: 80vh;
 }
 
+.artworksFullSeries {
+  animation: bulbaAnim 4s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  height: 80vh;
+}
+
 .mainFontArtworks {
   padding-top: 5vh;
   font-family: Mario;
