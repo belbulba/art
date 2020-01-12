@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Art-Gallery</title>
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body>
+  <script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+  <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div class="container-fluid bgIMG1">
+        <div class="row d-flex justify-content-center">
+          <div class="col-2 topIco1 d-flex justify-content-center">
+            <a href="https://vk.com/belbuiba"> <img class="iconsIMG" src="images/Vk_33.png" alt=""></a>
+          </div>
+          <div class="col-2 topIco2 d-flex justify-content-center">
+            <a href="https://facebook.com"> <img class="iconsIMG" src="images/Fb_33.png" alt=""></a>
+          </div>
+          <div class="col-2 topIco3 d-flex justify-content-center">
+            <a href="https://twitter.com"><img class=" iconsIMG" src="images/Twitter_33.png" alt=""></a>
+          </div>
+          <div class="col-2 topIco4 d-flex justify-content-center">
+            <a href="https://instagram.com/belbulba"> <img class=" iconsIMG" src="images/Inst_33.png" alt=""></a>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center contLogo">
+          <div class="col-auto">
+            <img src="images/logo.png" class="logo" alt="">
+          </div>
+        </div>
+        <div class="row  d-flex justify-content-center contTitle">
+          <div class="col-auto">
+            <img src="images/mainTitle.png" class="title" alt="">
+          </div>
+        </div>
+        <div class="row mouseContainer">
+          <div class="col d-flex justify-content-center">
+            <img class="mouseImage" src="images/mouse.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section active" id="section1">
+      <div class="container-fluid bgIMG2 d-flex justify-content-center align-items-center">
+        <div class=" galleryContainer row d-flex justify-content-center align-items-center">
+          <div class=" galleryImageContainer mainFont  col-sm-11 col-xl-3 d-flex justify-content-center align-items-center">
+            <a href="gallery.html">
+              <img class="displayNone galleryImage" src="images/gallery.png" alt="">
+              <img class="dontDisplay galleryImageXS" src="images/gallery.png" alt=""></a>
+          </div>
+          <div class="mainFont col-sm-11 col-xl-5 d-flex justify-content-center align-items-center">
+            <img class="displayNone secondTextImage" src="images/galleryVideo.png" alt="">
+            <img class="dontDisplay secondTextImageXS" src="images/textAndArrowXS.png" alt="">
+          </div>
+          <div class="galleryImageContainer mainFont  col-sm-11 col-xl-3 d-flex justify-content-center align-items-center">
+            <a href="vidGallery.html">
+              <img class="displayNone galleryImage" src="images/video.png" alt="">
+              <img class="dontDisplay galleryImageXS" src="images/video.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section2">
+      <div class="container-fluid bgIMG3 d-flex align-items-center justify-content-center">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-10 col-md-5 bulbaContainer d-flex justify-content-center align-items-center">
+            <img class="displayNone bulbaImage" src="images/Bulbao.png" alt="">
+            <img class="dontDisplay bulbaImageXS" src="images/Bulbao.png" alt="">
+          </div>
+          <div class="col-sm-10 col-md-4 bulbaTextContainer d-flex align-items-center">
+            <p class="displayNone mainFontBulba">Bulba - это творческий псевдоним молодого иллюстратора из Беларуси, Артёма Краснова.</p>
+            <p class="dontDisplay mainFontBulbaXS">Bulba - это творческий псевдоним молодого иллюстратора из Беларуси, Артёма Краснова.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="../js/fullpage.js"></script>
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

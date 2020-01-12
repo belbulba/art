@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Gallery</title>
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body>
+  <script>
+    window.onload = function() {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function() {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <div class="container-fluid bgIMG4 d-flex justify-content-center">
+    <div class="container">
+      <div class="row backContainer">
+        <div class="wow bounceInDown col d-flex justify-content-center" data-wow-duration="1.5s">
+          <a href="indexSecondActive.html">
+            <img class="displayNone backImage" src="images/back.png" alt="">
+            <img class="dontDisplay backImageXS" src="images/back.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <a href="artworks/video1.html">
+        <div class="col-12 d-flex justify-content-center">
+          <img class="videoGalleryImage wow bounceInLeft" data-wow-duration="1.5s" src="images/video1.png" alt="" style="margin-top:0">
+        </div>
+        </a>
+        <div class="col-12 d-flex justify-content-center mainFontVideo wow bounceInRight" data-wow-duration="1.5s">
+          "Liquid"
+        </div>
+        <a href="artworks/video2.html">
+        <div class="col-12 d-flex justify-content-center">
+          <img class="videoGalleryImage wow bounceInLeft" data-wow-duration="1.5s" src="images/video2.png" alt="">
+        </div>
+        </a>
+        <div class="col-12 d-flex justify-content-center mainFontVideo wow bounceInRight" data-wow-duration="1.5s">
+          "Particles"
+        </div>
+        <a href="artworks/video3.html">
+        <div class="col-12 d-flex justify-content-center">
+          <img class="videoGalleryImage wow bounceInLeft" data-wow-duration="1.5s" src="images/video3.png" alt="">
+        </div>
+        </a>
+        <div class="col-12 d-flex justify-content-center mainFontVideo wow bounceInRight" data-wow-duration="1.5s">
+          "Childhood reflexion"
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
