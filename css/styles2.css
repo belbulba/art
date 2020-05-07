@@ -208,5 +208,9 @@ color4 DARK GREY: rgba(26, 26, 26, 1);
 
 .BG {
   background-color: rgba(26, 26, 26, 1);
-  border-radius: 25px;
+
+}
+
+.BG2 {
+  background-color:  rgba(15, 41, 22, 1);
 }
