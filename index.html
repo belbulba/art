@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>Art-Gallery</title>
+  <title>FINAL COUNTDOWN</title>
   <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,113 +12,146 @@
   <link href="css/styles.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://formdesigner.ru/js/widgets/popup.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
   </script>
-</head>
+  <!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
 
+<script type="text/javascript">
+VK.init({apiId: API_ID, onlyWidgets: true});
+</script>
+<script type="text/javascript">
+	function timer(f_time) {
+		function timer_go() {
+			var n_time = Date.now();
+			var diff = f_time - n_time;
+			if(diff <= 0) return false;
+			var left = diff % 1000;
+
+			//секунды
+			diff = parseInt(diff / 1000);
+			var s = diff % 60;
+			if(s < 10) {
+				$(".seconds_1").html(0);
+				$(".seconds_2").html(s);
+			}else {
+				$(".seconds_1").html(parseInt(s / 10));
+				$(".seconds_2").html(s % 10);
+			}
+			//минуты
+			diff = parseInt(diff / 60);
+			var m = diff % 60;
+			if(m < 10) {
+				$(".minutes_1").html(0);
+				$(".minutes_2").html(m);
+			}else {
+				$(".minutes_1").html(parseInt(m / 10));
+				$(".minutes_2").html(m % 10);
+			}
+			//часы
+			diff = parseInt(diff / 60);
+			var h = diff % 24;
+			if(h < 10) {
+				$(".hours_1").html(0);
+				$(".hours_2").html(h);
+			}else {
+				$(".hours_1").html(parseInt(h / 10));
+				$(".hours_2").html(h % 10);
+			}
+			//дни
+			var d = parseInt(diff / 24);
+			if(d < 10) {
+				$(".days_1").html(0);
+				$(".days_2").html(d);
+			}else {
+				$(".days_1").html(parseInt(d / 10));
+				$(".days_2").html(d % 10);
+			}
+			setTimeout(timer_go, left);
+		}
+		setTimeout(timer_go, 0);
+	}
+
+	$(document).ready(function() {
+		var time = $(".timer").attr("data-finish");
+		timer(time);
+	});
+</script>
+</head>
 <body>
   <script>
-  window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-      document.body.classList.add('loaded');
-      document.body.classList.remove('loaded_hiding');
-    }, 500);
-  }
-</script>
-  <div class="preloader">
-  <div class="preloader__row">
-    <div class="preloader__item"></div>
-    <div class="preloader__item"></div>
-  </div>
-</div>
-  <div id="fullpage">
-    <div class="section" id="section0">
-      <div class="container-fluid bgIMG1">
-        <div class="row d-flex justify-content-center">
-          <div class="col-2 topIco1 d-flex justify-content-center">
-            <a href="https://vk.com/belbuiba"> <img class="iconsIMG" src="images/Vk_33.png" alt="no image"></a>
-          </div>
-          <div class="col-2 topIco2 d-flex justify-content-center">
-            <a href="https://facebook.com"> <img class="iconsIMG" src="images/Fb_33.png" alt="no image"></a>
-          </div>
-          <div class="col-2 topIco3 d-flex justify-content-center">
-            <a href="https://twitter.com"><img class=" iconsIMG" src="images/Twitter_33.png" alt="no image"></a>
-          </div>
-          <div class="col-2 topIco4 d-flex justify-content-center">
-            <a href="https://instagram.com/belbulba"> <img class=" iconsIMG" src="images/Inst_33.png" alt="no image"></a>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center contLogo">
-          <div class="col-auto">
-            <img src="images/logo.png" class="logo" alt="no image">
-          </div>
-        </div>
-        <div class="row  d-flex justify-content-center contTitle">
-          <div class="col-auto">
-            <img src="images/mainTitle.png" class="title" alt="no image">
-          </div>
-        </div>
-        <div class="row mouseContainer">
-          <div class="col d-flex justify-content-center">
-            <img class="mouseImage" src="images/mouse.gif" alt="no image">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" id="section1">
-      <div class="container-fluid bgIMG2 d-flex justify-content-center align-items-center">
-        <div class=" galleryContainer row d-flex justify-content-center align-items-center">
-          <div class=" galleryImageContainer mainFont  col-sm-11 col-xl-3 d-flex justify-content-center align-items-center">
-            <a href="gallery.html">
-              <img class="displayNone galleryImage" src="images/gallery.png" alt="no image">
-              <img class="dontDisplay galleryImageXS" src="images/gallery.png" alt="no image"></a>
-          </div>
-          <div class="mainFont col-sm-11 col-xl-5 d-flex justify-content-center align-items-center">
-            <img class="displayNone secondTextImage" src="images/galleryVideo.png" alt="no image">
-            <img class="dontDisplay secondTextImageXS" src="images/textAndArrowXS.png" alt="no image">
-          </div>
-          <div class="galleryImageContainer mainFont  col-sm-11 col-xl-3 d-flex justify-content-center align-items-center">
-            <a href="vidGallery.html">
-              <img class="displayNone galleryImage" src="images/video.png" alt="no image">
-              <img class="dontDisplay galleryImageXS" src="images/video.png" alt="no image"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" id="section2">
-      <div class="container-fluid bgIMG3 d-flex align-items-center justify-content-center">
-        <div class="row d-flex justify-content-center">
-          <div class="col-sm-10 col-md-5 bulbaContainer d-flex justify-content-center align-items-center">
-            <img class="displayNone bulbaImage" src="images/Bulbao.png" alt="no image">
-            <img class="dontDisplay bulbaImageXS" src="images/Bulbao.png" alt="no image">
-          </div>
-          <div class="col-sm-10 col-md-4 bulbaTextContainer d-flex align-items-center">
-            <p class="displayNone mainFontBulba">Bulba - это творческий псевдоним молодого иллюстратора из Беларуси, Артёма Краснова.</p>
-            <p class="dontDisplay mainFontBulbaXS">Bulba - это творческий псевдоним молодого иллюстратора из Беларуси, Артёма Краснова.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div
-
-
-  <script type="text/javascript" src="js/fullpage.js"></script>
-  <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-
-    });
+    window.onload = function() {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function() {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
   </script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+    <div class="container-fluid bgColor">
+      <div class="container main">
+          <div class="row mainRow d-flex align-items-center justify-content-center">
+            <div class="col-12 timerCol d-flex justify-content-center">
+               <script type="text/javascript">
+                 var d = new Date();
+                 var b = new Date(2021,10,7);
+                 document.write("0" + d.getDate() + ".0" + (d.getMonth()+1) + "." + d.getFullYear() + " - 0" + b.getDate() + "." + (b.getMonth()+1) + "." + b.getFullYear());
+               </script>
+            </div>
+            <div class="col-12 timerCol d-flex justify-content-center">
+              Осталось ждать
+            </div>
+            <div class="col-12">
+              <div class="timer" data-finish="1636232400000">
+	<div class="timer_section">
+		<div class="days_1">0</div>
+		<div class="days_2">0</div>
+		<div class="timer_section_desc">дней</div>
+	</div>
+	<div class="timer_delimetr">:</div>
+	<div class="timer_section">
+		<div class="hours_1">0</div>
+		<div class="hours_2">0</div>
+		<div class="timer_section_desc">часов</div>
+	</div>
+	<div class="timer_delimetr">:</div>
+	<div class="timer_section">
+		<div class="minutes_1">0</div>
+		<div class="minutes_2">0</div>
+		<div class="timer_section_desc">минут</div>
+	</div>
+	<div class="timer_delimetr">:</div>
+	<div class="timer_section">
+		<div class="seconds_1">0</div>
+		<div class="seconds_2">0</div>
+		<div class="timer_section_desc">секунд</div>
+	</div>
+</div>
+            </div>
+            <div class="col-12">
 
-</html>
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
+</script>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</body>
