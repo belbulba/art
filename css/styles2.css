@@ -205,3 +205,8 @@ color4 DARK GREY: rgba(26, 26, 26, 1);
 .row2 {
   width:100vw;
 }
+
+.BG {
+  background-color: rgba(26, 26, 26, 1);
+  border-radius: 25px;
+}
