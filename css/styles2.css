@@ -203,14 +203,14 @@ color4 DARK GREY: rgba(26, 26, 26, 1);
 }
 
 .row2 {
-  width:100vw;
+width: 100vw;
 }
 
-.BG {
+.BG123 {
   background-color: rgba(26, 26, 26, 1);
 
 }
 
-.BG2 {
+.BG2123 {
   background-color:  rgba(15, 41, 22, 1);
 }
