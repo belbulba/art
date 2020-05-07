@@ -22,12 +22,6 @@
   <script>
     new WOW().init();
   </script>
-  <!-- Put this script tag to the <head> of your page -->
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-
-<script type="text/javascript">
-VK.init({apiId: API_ID, onlyWidgets: true});
-</script>
 <script type="text/javascript">
 	function timer(f_time) {
 		function timer_go() {
@@ -68,13 +62,9 @@ VK.init({apiId: API_ID, onlyWidgets: true});
 			}
 			//дни
 			var d = parseInt(diff / 24);
-			if(d < 10) {
-				$(".days_1").html(0);
-				$(".days_2").html(d);
-			}else {
-				$(".days_1").html(parseInt(d / 10));
-				$(".days_2").html(d % 10);
-			}
+
+				$(".days_1").html(d);
+
 			setTimeout(timer_go, left);
 		}
 		setTimeout(timer_go, 0);
@@ -107,9 +97,10 @@ VK.init({apiId: API_ID, onlyWidgets: true});
           <div class="row mainRow d-flex align-items-center justify-content-center">
             <div class="col-12 timerCol d-flex justify-content-center">
                <script type="text/javascript">
-                 var d = new Date();
+                 var d = new Date(2020,4,13);
                  var b = new Date(2021,10,7);
-                 document.write("0" + d.getDate() + ".0" + (d.getMonth()+1) + "." + d.getFullYear() + " - 0" + b.getDate() + "." + (b.getMonth()+1) + "." + b.getFullYear());
+                 document.write(d.getDate() + ".0" + (d.getMonth()+1) + "." + d.getFullYear() + " - 0" + b.getDate() + "." + (b.getMonth()+1) + "." + b.getFullYear());
+                 
                </script>
             </div>
             <div class="col-12 timerCol d-flex justify-content-center">
@@ -117,38 +108,69 @@ VK.init({apiId: API_ID, onlyWidgets: true});
             </div>
             <div class="col-12">
               <div class="timer" data-finish="1636232400000">
-	<div class="timer_section">
-		<div class="days_1">0</div>
-		<div class="days_2">0</div>
-		<div class="timer_section_desc">дней</div>
-	</div>
-	<div class="timer_delimetr">:</div>
-	<div class="timer_section">
-		<div class="hours_1">0</div>
-		<div class="hours_2">0</div>
-		<div class="timer_section_desc">часов</div>
-	</div>
-	<div class="timer_delimetr">:</div>
-	<div class="timer_section">
-		<div class="minutes_1">0</div>
-		<div class="minutes_2">0</div>
-		<div class="timer_section_desc">минут</div>
-	</div>
-	<div class="timer_delimetr">:</div>
-	<div class="timer_section">
-		<div class="seconds_1">0</div>
-		<div class="seconds_2">0</div>
-		<div class="timer_section_desc">секунд</div>
-	</div>
-</div>
+             <div class="row row0">
+              <div class="col-3 d-flex justify-content-center  timer_section">
+               <div class="days_1" style="color:rgba(253, 136, 136, 1)">
+                 0
+               </div>
+              </div>
+              <div class="col-3 d-flex justify-content-center  timer_section">
+               <div class="hours_1">
+                 0
+               </div>
+               <div class="hours_2">
+                 0
+               </div>
+              </div>
+              <div class="col-3 d-flex justify-content-center  timer_section">
+               <div class="minutes_1">
+                 0
+               </div>
+               <div class="minutes_2">
+                 0
+               </div>
+              </div>
+              <div class="col-3 d-flex justify-content-center  timer_section">
+               <div class="seconds_1">
+                 0
+               </div>
+               <div class="seconds_2">
+                 0
+               </div>
+              </div>
+             </div>
+             <div class="row row1">
+               <div class="col-3 timerCol2">
+                 ДНЕЙ
+               </div>
+               <div class="col-3 timerCol2">
+                 ЧАСОВ
+               </div>
+               <div class="col-3 timerCol2">
+                 МИНУТ
+               </div>
+               <div class="col-3 timerCol2">
+                 СЕКУНД
+               </div>
+             </div>
+              </div>
             </div>
-            <div class="col-12">
+            <div class="row d-flex justify-content-center row2">
+              <div class="col-12 col-md-10">
 
-<!-- Put this div tag to the place, where the Comments block will be -->
-<div id="vk_comments"></div>
-<script type="text/javascript">
-VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
-</script>
+                <!-- Put this script tag to the <head> of your page -->
+                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+                <script type="text/javascript">
+                  VK.init({apiId: 7452587, onlyWidgets: true});
+                </script>
+
+                <!-- Put this div tag to the place, where the Comments block will be -->
+                <div id="vk_comments"></div>
+                <script type="text/javascript">
+                VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+                </script>
+              </div>
             </div>
         </div>
       </div>

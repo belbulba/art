@@ -1,3 +1,9 @@
+body {
+  background-color: rgba(15, 41, 22, 1);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 @font-face {
   font-family: 'font1';
   src: url('font1.ttf') format('truetype');
@@ -116,7 +122,7 @@ color4 DARK GREY: rgba(26, 26, 26, 1);
 }
 
 .timerCol2 {
-  color:rgba(253, 136, 136, 1);
+  color:rgba(218, 215, 205, 1);
   font-size: 60px;
   font-family: font2;
 }
@@ -141,7 +147,7 @@ color4 DARK GREY: rgba(26, 26, 26, 1);
 
 		color: rgba(218, 215, 205, 1);
 		line-height: 70px;
-		width: 45px;
+		width: 1vw;
 		margin: 0 1px;
 		border-radius: 2px;
 	}
@@ -179,4 +185,23 @@ color4 DARK GREY: rgba(26, 26, 26, 1);
 			font-size: 14px;
 			line-height: 26px;
 		}
+    .row2 {
+      width: 100vw;
+    }
+
+    .timerCol {
+      font-size: 35px;
+    }
+    .timerCol2 {
+      font-size: 21px;
+    }
 	}
+
+
+.row1 {
+  height:10vh;
+}
+
+.row2 {
+  width:100vw;
+}
